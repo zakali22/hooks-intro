@@ -1,0 +1,45 @@
+.navbar {
+    display: flex;
+    align-items: stretch;
+    padding: 0 75px 0 15px;
+    font-family: 'Poppins', sans-serif;
+    &__title {
+        margin-right: auto;
+        h2 {
+            margin: 0;
+            padding-top: 15px;
+            font-weight: 400;
+        }
+    }
+    &__links {
+        display: flex;
+        border-bottom: 1px solid lightseagreen;
+        a {
+            display: flex;
+            align-items: flex-end;
+            font-size: 17px;
+            padding: 0;
+            font-family: inherit;
+            font-weight: 300;
+            transition: all .2s ease-in-out;
+            p {
+                margin: 0;
+                border-bottom-width: 0;
+                padding-bottom: 7px;
+            }
+            &:not(:last-of-type){
+                margin-right: 35px;
+            }
+            &:link, &:visited, &:active {
+                text-decoration: none;
+                color: inherit;
+            }
+            &:hover, &:focus {
+                p {
+                    border-bottom: 2px solid lightseagreen;
+                    margin-bottom: -2px;
+                }
+            }
+        }
+    }
+}
